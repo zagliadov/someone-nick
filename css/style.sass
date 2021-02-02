@@ -1,0 +1,67 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.container
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100% 
+    height: 100vh
+
+.chat 
+    width: 600px
+    border: 1px solid black
+
+.names
+    border: 1px solid black
+    padding-left: 10px
+    padding-right: 10px
+    .header 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        small
+            color: #888888
+            font-size: 16px
+
+.message
+    padding-top: 10px
+    display: none
+
+.option
+    border: 1px solid black
+    display: flex
+    justify-content: flex-end
+    a   
+        padding: 10px
+        &:first-child:after
+            content: '\f3bf'
+            font-family: 'Font Awesome 5 Free'
+            font-weight: 900
+            padding-left: 10px
+            text-decoration: none
+        &:last-child::after
+            content: '\f3bf'
+            font-family: 'Font Awesome 5 Free'
+            font-weight: 900
+            padding-left: 10px
+            text-decoration: none
+              
+.option.up a:last-child:after
+    content: '\f3be'
+.option.down a:last-child:after
+    content: '\f3bf'
+
+
+
+.names.active .message
+    display: block
+
+
+.click
+    color: silver
+
+.d
+    display: none
